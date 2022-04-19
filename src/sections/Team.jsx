@@ -40,8 +40,6 @@ export default function Team() {
                         <h3>WEB DEVELOPER</h3>
                         <img src={foto4} class="rounded mx-auto d-block" alt="" />
                         <p>JAMES RODRIGUEZ<br/>
-                        <a href="https://www.linkedin.com/in/james-rodriguez-fonseca-a4195192/" rel="noreferrer" target="_blank">
-                        <i class="fab fa-linkedin"></i></a>
                         </p>
                     </div>
                     <div className="col-md-4 col-lg-3">

@@ -1,0 +1,985 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: 'axehandelregular';
+    src: url('./fonts/axehandel-webfont.woff2') format('woff2'),
+         url('./fonts/axehandel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #06189e;
+    overflow-x: hidden;
+}
+
+:root{
+    --colorRed: #007fc9;
+    --outline: rgb(25, 213, 201);
+    --yellowColor: rgb(231, 181, 15);
+}
+
+
+/************************************** Navbar *************************************/
+.header{
+    position: relative;
+    margin: 0;
+}
+
+
+#brand{
+ position: absolute;
+ display: inline;
+
+ width: 1px;
+}
+
+#brand img{
+    width: 105px;
+    margin-left: -25px;
+    margin-bottom: -10px;
+}
+
+#navbar{
+    margin-top: 50px;
+    background-color: var(--colorRed);
+    border-radius: 18px;
+    outline: 8px solid var(--outline);
+    outline-offset: -5px;
+}
+
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 2.3vw;
+}
+
+#navbar li{
+    text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+}
+
+
+#navbar li:hover {
+	transform: translateY(-5px);
+    text-decoration: underline;
+
+}
+
+
+
+#navlink{
+    margin: auto;
+}
+
+/************************************** Banner *************************************/
+
+.Banner{
+    height: 100vh;
+    margin-top: -40px;
+    padding-top: 180px;
+   
+}
+
+.Banner h1{
+    font-family: 'axehandelregular';
+    font-size: 1200%;
+    color: white;
+    line-height: 0.8;
+    margin-bottom: 0rem;
+}
+
+.Banner h3{
+    font-weight: 1000;
+    font-size: 37px;
+    color:  var(--colorRed);
+
+}
+
+.Banner button{
+    color: white;
+    padding: 5px 20px;
+    margin: 5px;
+    width: 200px;
+    background-color:  var(--colorRed);
+    border-radius: 15px;
+    outline: 4px solid var(--outline);
+    outline-offset: -4px;
+    z-index: 1;
+}
+
+
+
+.Banner p{
+    font-size: 25px;
+}
+
+.Banner i{
+    margin-right: 12px;
+}
+
+
+#caja{  
+    height: 400px;
+    margin-top: -1px;
+    overflow: hidden;
+	transform: translatey(0px);
+	animation: float 3s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+@keyframes float {
+	0% {
+
+		transform: translatey(0px);
+	}
+	50% {
+
+		transform: translatey(-40px);
+	}
+	100% {
+
+		transform: translatey(0px);
+	}
+}
+
+/************************************** Burger *************************************/
+
+.Burger-Title h1{
+    font-family: 'axehandelregular';
+    font-size: 800%;
+    line-height: 0.8;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: rgba(0, 0, 0, 0.356) 4px 5px;
+}
+
+.Burger{
+    position: relative;
+    
+}
+
+.Slider2Div{
+    width: 80%;
+    height: 50rem; 
+    margin: 0 4.5rem; 
+    margin-left: 10%;
+}
+
+.Slider2Div h1{
+    background-color: rgb(98, 7, 106);
+    text-align: center;
+    color: white;
+    font-family: 'axehandelregular';
+    font-size: 800%;
+}
+
+
+.react-parallax-content{
+    padding-top: 1%;
+}
+
+.carrouselDiv h1{
+    font-family: 'axehandelregular';
+    text-align: center;
+    color: white;
+    font-size: 11vw;
+    line-height: 0.8;
+    
+}
+
+.carrouselDiv h3{
+    text-align: center;
+    color: white;
+    font-size: 6vw;
+    margin-top: -50px;
+    font-weight: 800;
+}
+
+.css-1fzpoyk img{
+    width: 60vw !important;
+}
+
+.css-1qzevvg{
+position: relative;
+display: flex;
+height: 60px;
+margin: -30rem auto 0px !important;
+width: 100% !important;
+-webkit-box-pack: justify;
+justify-content: space-between;
+}
+
+.cajitafila{
+    position: absolute;
+    z-index: 1;
+    bottom: -100px;
+    width: 99vw;
+}
+
+/************************************** roadmap *************************************/
+.roadmap{
+    margin: 50px 0;
+    color: white;
+}
+
+
+
+.roadmap{
+    height: 100vh;
+    position: relative;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+.roadtitle{
+    text-align: center;
+    
+}
+
+.roadtitle h1{
+    font-family: 'axehandelregular';
+    font-size: 800%;
+    line-height: 0.8;
+}
+
+.cajitaRoadmap{
+    position: absolute;
+    width: 200px;
+}
+
+.cajitaRoadmap h3{
+    font-family: 'axehandelregular';
+    line-height: 0.8;
+    margin-right: 2px;
+    color: white;
+    text-align: end;
+}
+
+.cajitaRoadmap img{
+    width: 140px;
+    animation: boxfloat 3s ease-in-out infinite;
+    
+}
+.cajitaRoadmap img:hover{
+    filter:saturate(2);
+    
+}
+
+@keyframes boxfloat {
+	0% {
+
+		transform: translatey(0px);
+	}
+	50% {
+
+		transform: translatey(-40px);
+	}
+	100% {
+
+		transform: translatey(0px);
+	}
+}
+
+#RoadBox0{bottom: 10px;left: 10px;}
+#RoadBox1{top: 60px;left: 60px;}
+#RoadBox2{top: 200px;left: 300px;}
+#RoadBox3{bottom: 50px;left: 400px;}
+#RoadBox4{bottom: 120px;right: 0px;}
+#RoadBox5{top: 50px;right: 0px;}
+
+
+#RoadBox0-xs{top: 50px;left: 10px;}
+#RoadBox1-xs{bottom: 0px;left: 60px;}
+#RoadBox2-xs{top: 250px;left: 200px;}
+#RoadBox3-xs{top: 50px;left: 300px;}
+#RoadBox4-xs{bottom: 300px;right: 0px;}
+#RoadBox5-xs{bottom: 50px;right: 0px;}
+
+
+
+.mapcol ul{
+    list-style-type: none;
+    border-left: solid 5px var(--yellowColor);
+    padding-left: 2px;
+    font-family: 'axehandelregular';
+    text-align: start;
+    font-size: 13px;
+    
+}
+.popover{
+    border: solid white 5px;
+    
+   
+}
+
+.popover-header{
+    background-color: #000;
+    color: white;
+    font-family: 'axehandelregular';
+    font-size: 200%;
+    width: 20vw;
+    max-width: 265px;
+    
+}
+
+.popover-body{
+    background-color: #000;
+    color: white;
+    width: 20vw;
+    max-width: 265px;
+}
+
+
+.popover-body li{
+    margin: 5px;
+}
+
+/************************************** About *************************************/
+.aboutus{
+    padding: 100px 0px;
+}
+
+
+.aboutus .container h1{
+    
+    color: white;
+    font-family: 'axehandelregular';
+    font-size: 800%;
+}
+
+.aboutus .container p{
+    color: white;
+    margin: 50px 0;
+    font-size: 20px;
+}
+
+
+/************************************** Tokenomic *************************************/
+
+.tokenomic{
+    padding: 40px 0;
+    margin-top: 100px;
+    position: relative;
+}
+
+.tokenomic h1{
+    text-align: center;
+    color: white;
+    font-family: 'axehandelregular';
+    font-size: 800%;
+}
+
+.ruleta{
+    cursor: pointer;
+   width: 530px;
+  height: 530px;
+    animation: rotation 10s infinite linear;
+}
+
+.ruleta:hover{
+    animation-play-state: paused;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.parts{
+    margin: 40px;
+    margin-bottom: 40px;
+    transition: transform 200ms ease-in-out;
+}
+
+.parts img{
+    width: 25vw;
+    max-width: 350px;
+    min-width: 200px;
+}
+
+.part {
+    margin-top: -3.5vw;
+    transition: transform 200ms ease-in-out;
+    
+}
+.part:hover{
+    z-index: 10;
+    transform: scale(1.1);
+}
+
+.parts:hover{
+    transform: scale(1.05);
+}
+
+#part1{z-index: 7;}
+#part2{z-index: 6;}
+#part3{z-index: 5;}
+#part4{z-index: 4;}
+#part5{z-index: 3;}
+#part6{z-index: 2;}
+#part7{z-index: 1;}
+
+.tlp{
+    font-size: 30px;
+
+}
+
+.token{
+    z-index: -1;
+    width: 14vw;
+    position: absolute;
+}
+
+#token1{
+    animation: rotationToken 3s infinite linear;
+    top: 10vh;
+    left: -4vw;
+}
+#token2{
+    animation: rotationToken 3s infinite linear;
+    top: 30vh;
+    left: 2vw;
+}
+#token3{
+    animation: rotationToken 2s infinite linear;
+    top: 55vh;
+    left: -4vw;
+}
+#token4{
+    animation: rotationToken 4s infinite linear;
+    top: 80vh;
+    left: 0;
+}
+
+
+#token7{
+    animation: rotationToken 3s infinite linear;
+    top: 10vh;
+    right: -4vw;
+}
+#token8{
+    animation: rotationToken 5s infinite linear;
+    top: 30vh;
+    right: 1vw;
+}
+#token9{
+    animation: rotationToken 2s infinite linear;
+    top: 55vh;
+    right: -2vw;
+}
+#token10{
+    animation: rotationToken 4s infinite linear;
+    top: 80vh;
+    right: 1vw;
+}
+
+.liFooter{
+    color: white;
+    text-decoration-line: none;
+}
+
+
+@keyframes rotationToken {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+/************************************** Team *************************************/
+.Team{
+    position: relative;
+}
+
+#mustard-1{
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(210deg);
+}
+
+#mustard-2{
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(160deg);
+}
+
+.Team h1{
+    text-align: center;
+    color: white;
+    font-family: 'axehandelregular';
+    font-size: 800%;
+}
+
+.Team .col-lg-3{
+    margin-bottom: 80px;
+    margin-top: 20px;
+    
+}
+
+.Team h3{
+    text-align: center;
+    color: white;
+    font-family: 'axehandelregular';
+    font-size: 200%;
+}
+
+.Team p{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'axehandelregular';
+
+}
+
+
+.Team img{
+    width: 300px;
+}
+
+.Team i{
+    cursor: pointer;
+    font-size:  30px;
+    text-decoration: none;
+    color: white;
+    margin: 8px;
+}
+
+/************************************** Footer *************************************/
+.Footer{
+    background-color: #000;
+}
+
+.Help li{
+    text-decoration-line: none;
+    padding:"10px 0px"
+}
+.Help li:hover{
+   background-color: rgb(123, 0, 194);
+   border-radius: 5px;
+}
+.Help h3{
+    color: white;
+    font-family: 'axehandelregular';
+    font-size: 200%;
+    text-align: left;
+    margin:"0px 0px 30px 0px"
+}
+.About li{
+    text-decoration-line: none;
+    padding:"10px 0px"
+}
+.About li:hover{
+   background-color: rgb(123, 0, 194);
+   border-radius: 5px;
+}
+.About h3{
+    color: white;
+    font-family: 'axehandelregular';
+    font-size: 200%;
+    text-align: left;
+    margin:"0px 0px 30px 0px"
+}
+.About div {
+    margin: 60px 0px ;
+}
+.About i {
+    color: white;
+    font-size: 25px;
+    margin: 0px 10px;
+}
+
+.About i:hover {
+    color: rgb(123, 0, 194);
+ 
+}
+
+.Coming h3{
+    color: white;
+    font-family: 'axehandelregular';
+    font-size: 200%;
+    text-align: left;
+    margin:"0px 0px 30px 0px"
+}
+.Privacy h3{
+    color: white;
+    font-family: 'axehandelregular';
+    font-size: 250%;
+    text-align: center;
+    margin:"0px 0px 30px 0px"
+}
+.Privacy div {
+    text-align: center;
+    margin: 10px 0px 30px 0px;
+}
+.Privacy a{
+    text-decoration: none;
+    margin: 0px 20px;
+    color: gray;
+}
+
+.patro{
+    width: 100px;
+    margin: 10px 10px;
+}
+
+.patrodiv{
+    width: 240px;
+}
+
+
+/************************************** queries *************************************/
+
+
+
+.boxMove{
+    width: 100px;
+    height: 100px;
+    background-color: var(--colorRed);
+}
+
+.topath{
+    margin-top: 210px;
+    position: absolute;
+    width: 655px;
+    height: 655px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url("./images/Line1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: white 2px solid;
+    border-radius: 20px;
+    display: none;
+}
+
+.topathXL{
+    margin-top: 210px;
+    position: absolute;
+    width: 900px;
+    height: 655px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url("./images/LineXL.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: white 2px solid;
+    border-radius: 20px;
+    padding-left: 7%;
+    padding-top: 66px;
+}
+
+.moto{
+    z-index: -4;
+    width: 200px;
+    height: 200px;
+    background-image: url("./images/moto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+   transform: scale(.4);
+   offset-path: path("M-0.760166 156.924C25.9715 93.7474 152.769 -132.497 152.669 117.644C152.481 584.421 207.353 540.048 264.035 528.278C376.436 559.144 304.158 39.6778 407.38 12.9585C469.108 2.45457 524.762 33.7863 516.646 463.764C513.842 612.359 637.524 430.216 637.524 430.216");
+   animation: move 8s linear infinite;
+
+}
+
+.motoXL{
+    z-index: -4;
+    margin-left: -98px;
+    margin-top: -45px;
+    width: 200px;
+    height: 200px;
+    background-image: url("./images/moto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+   transform: scale(.4);
+   offset-path: path("M-34 607.5C25 654.5 76.5 542.5 76.5 483.499C263.222 -755.124 540.224 1297.15 788.075 264.499C792.099 229.758 853.5 105.5 911 140.5");
+   animation: move 8s linear infinite;
+
+}
+.moto:before,
+.moto:after{
+  content: '';
+  width:10px;
+  height:10px;
+  position: absolute;
+  top:15px;
+  left:-5px;
+  border-radius: 50%;
+  background-color: #000;
+  filter: blur(2px);
+}
+
+.motoXL:before,
+.motoXL:after{
+  content: '';
+  width:10px;
+  height:10px;
+  position: absolute;
+  top:15px;
+  left:-70px;
+  border-radius: 50%;
+  background-color: #000;
+  filter: blur(2px);
+}
+
+@keyframes move{
+    100%{offset-distance: 100%;}
+}
+
+
+
+
+
+/************************************** Queries *************************************/
+
+@media (min-width: 1200px) { 
+
+    #movilnav{
+        display: none;
+    }
+    
+
+    
+ }
+
+@media (max-width: 1200px) { 
+    #navbar a{
+        padding: 0 1.6vw;
+    }
+    #navlink{
+        margin-left: 80px;
+    }
+
+    #movilnav{
+        display: none;
+    }
+
+    .Banner button{
+        padding: 5px 20px;
+        margin: 5px;
+        width: 200px;
+    }
+
+    .carrouselDiv h3{
+
+        margin-top: -80px;
+      
+    }
+
+ }
+
+ @media (max-width: 992px) { 
+    #navbar a{
+        padding: 0 0.8vw;
+        font-size: 16px;
+    }
+
+    #movilnav{
+        display: none;
+    }
+
+    .Banner h1{
+        font-size: 800%;
+    }
+
+    .Banner h3{
+        font-size: 25px;
+    }
+
+    .Banner p{
+        color: white;
+        font-size: 18px;
+        background-color:  var(--colorRed);
+        border-radius: 15px;
+        outline: 4px solid var(--outline);
+        outline-offset: -4px;
+    }
+
+    #caja{
+        height: 400px;
+    }
+
+    .Banner{
+        padding-top: 200px;
+    }
+
+    .Banner button{
+        width: 165px;
+    }
+
+    .topathXL{
+        display: none;
+    }
+    .topath{
+        display: block;
+    }
+
+    .motoXL{
+        display: none;
+    }
+
+    .moto{
+        display: block;
+    }
+    
+  }
+
+
+ @media (max-width: 768px) {
+    #navbar a{
+        padding: 0 1.3vw;
+        font-size: 10px;
+    }
+    #movilnav{
+        display: none;
+    }
+
+    .Banner{
+        padding-top: 100px;
+        margin-bottom: 300px;
+    }
+
+    .Banner h1{
+        font-size: 1100%;
+        
+    }
+
+    .Banner h3{
+        font-size: 32px;
+    }
+
+    #bannerRow{
+        margin-left: 70px;
+    }
+
+    .Banner button{
+        padding: 5px 20px;
+        width: 205px;
+    }
+
+    .Banner p{
+        font-size: 24px;
+
+    }
+
+    #caja{  
+  
+        margin-top: -10px;
+    }
+
+    .col-sm-6{
+        width: 40%;
+    }
+
+
+   }
+
+
+ @media (max-width: 576px) { 
+    #navbar{
+        display: none;
+    }
+    #movilnav{
+        display: inline;
+    }
+    #movilnav .navbar{
+        background-color: #000dff;
+        outline: 4px solid var(--outline);
+        outline-offset: -4px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+
+    #movilnav a{
+        text-decoration: none;
+        color: white;
+        font-size: 50%;
+        font-weight: 700;
+        padding: 0 1.6vw;
+        text-align: center;
+        border-left: solid 1px  var(--colorRed);
+        border-right: solid 1px var(--outline);
+        padding: 10px;
+        width: 100%;
+        
+    }
+
+    #navlink{
+        margin-left: auto;
+    }
+
+    #movilnav i{
+        font-size: 8vw;
+    }
+
+    #movilbrand img{
+        width: 60px;
+    }
+
+    .Banner h1{
+        font-size: 20vw;
+        text-align: center;
+    }
+
+    .Banner{
+        margin-bottom: 200px;
+    }
+
+    .Banner h3{
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    #caja{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .col-sm-6{
+        width: 100%;
+    }
+
+
+  }
+
+  @media (max-width: 400px) { 
+    #movilnav i{
+        font-size: 8vw;
+    }
+    #movilnav a{
+        font-size: 0%;
+        font-weight: 700;
+        padding: 8px;
+        width: 90%;
+        
+    }
+
+
+
+
+  }

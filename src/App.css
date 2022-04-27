@@ -305,7 +305,7 @@ justify-content: space-between;
 #RoadBox0-xs{top: 50px;left: 10px;}
 #RoadBox1-xs{bottom: 0px;left: 60px;}
 #RoadBox2-xs{top: 250px;left: 200px;}
-#RoadBox3-xs{top: 50px;left: 300px;}
+#RoadBox3-xs{top: 50px;left: 200px;}
 #RoadBox4-xs{bottom: 300px;right: 0px;}
 #RoadBox5-xs{bottom: 50px;right: 0px;}
 
@@ -385,8 +385,8 @@ justify-content: space-between;
 
 .ruleta{
     cursor: pointer;
-   width: 530px;
-  height: 530px;
+    width: 100%;
+    height: 100%;
     animation: rotation 10s infinite linear;
 }
 
@@ -820,7 +820,9 @@ justify-content: space-between;
     }
 
     #caja{
+        justify-content: center;
         height: 400px;
+        width: 400px;
     }
 
     .Banner{
@@ -836,15 +838,21 @@ justify-content: space-between;
     }
     .topath{
         display: block;
-    }
+       justify-content: center;
+        width: 355px;
+        height: 455px;
+        top: 50%;
+        left: 50%;
+        }
+    
 
     .motoXL{
         display: none;
     }
 
-    .moto{
+    /*.moto{
         display: block;
-    }
+    }*/
     
   }
 
@@ -975,11 +983,99 @@ justify-content: space-between;
         font-size: 0%;
         font-weight: 700;
         padding: 8px;
-        width: 90%;
-        
+        width: 90%;       
+    }
+    #RoadBox3-xs {
+        top: 50px;
+        left: 200px;
     }
 
+    img#caja {
+        height: 270px;
+        width: 270px;
+        margin-top: 20px;
+        align-items: center;
+    }
 
+    #token7 {
+        visibility: hidden;
 
+    }
+    #token8 {
+        visibility: hidden;
+    }
+    #token9 {
+        visibility: hidden;
+    }
+    #token3 {
+        visibility: hidden;
+    }
+    #token1 {
+        visibility: hidden;
+    }
+    #token10 {
+        visibility: hidden;
+    }
+    #token2 {
+        visibility: hidden;
+    }
+    #token4 {
+        visibility: hidden;
+    }
+
+    .cajitaRoadmap img {
+        width: 80px;
+    }
+    .cajitaRoadmap h3 {
+        text-align: left;
+    }
+
+    .Burger-Title h1 {
+        font-size: 5rem;
+    }
+
+    .roadtitle h1{
+        font-size: 5rem;
+    }
+    .tokenomic h1 {
+        font-size: 5rem;
+    }
+
+    .aboutus .container h1 {
+            font-size: 5rem;
+    }
+
+    .Team h1 {
+            font-size: 5rem;
+    }
+
+    .popover {
+        width: 80vw;
+    }
+
+    .popover-header {
+        width: 80vw;
+    }
+
+    .popover-body {
+        width: 80vw;
+    }
+
+    .col-5 {
+        width: 1.66666667%;
+    }
+
+    .col-7 {
+        float: left;
+        width: 1%;
+    }
+
+    .ruleta {
+    
+    width: 90%;
+    height: 100%;
+    animation: none;
+    }
+    
 
   }
